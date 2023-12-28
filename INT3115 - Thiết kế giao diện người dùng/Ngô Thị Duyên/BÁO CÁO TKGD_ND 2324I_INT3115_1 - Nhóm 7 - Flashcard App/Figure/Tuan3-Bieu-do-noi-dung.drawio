@@ -1,0 +1,116 @@
+<mxfile host="app.diagrams.net" modified="2023-10-06T01:20:50.979Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="QmnoBt5gttuBTRsTPUFf" version="21.7.2" type="google">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--0" value="Đăng ký tài khoản" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="120" width="190" height="290" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" value="Người dùng cần đăng ký tài khoản để xác thực danh tính và sử dụng các chức năng của ứng dụng&#xa;- Chức năng:&#xa;+ Nhập thông tin cho tài khoản để đăng ký&#xa;+ Xác thực danh tính và sử dụng các chức năng của ứng dụng&#xa;- Liên kết: Màn hình chính và vào mục tài khoản để thiết lập các cài đặt cho tài khoản của mình.&#xa;- Đối tượng: Tất cả người dùng chưa có tài khoản&#xa;- Ràng buộc: Tài khoản chưa được đăng ký tức là thông tin không trùng với các tài khoản đang tồn tại trong ứng dụng&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+          <mxGeometry y="26" width="190" height="264" as="geometry" />
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-0" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.006;exitY=0.474;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.006;entryY=0.582;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--1" target="vf-lQCcpxvajzbO1AWoG-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="290" as="sourcePoint" />
+            <mxPoint x="480" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-3" value="Đăng nhập tài khoản" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="120" width="180" height="240" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-4" value="Người dùng đăng nhập vào ứng dụng để sử dụng các tính năng cá nhân hóa &#xa;- Chức năng:&#xa;+ Nhập tài khoản và mật khẩu&#xa;+ Đăng nhập tài khoản&#xa;- Liên kết: Trang chính, thiết lập tài khoản&#xa;- Đối tượng: Tài khoản, thiết lập tài khoản&#xa;- Ràng buộc: Tài khoản phải tồn tại và đi kèm mật khẩu tương ứng " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="vf-lQCcpxvajzbO1AWoG-3">
+          <mxGeometry y="26" width="180" height="214" as="geometry" />
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-5" value="Daily fact" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="120" width="180" height="220" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-6" value="Khi mở ứng dụng có một pop-up về thông tin thú vị của một di tích lịch sử người dùng theo dõi.&#xa;- Chức năng: Cung cấp những thông tin tóm gọn, bên lề về một di tích, lịch sử… mà người dùng đã theo dõi.&#xa;- Liên kết: Không&#xa;- Đối tượng: Các di tích, lịch sử,...có trong cơ sở dữ liệu. - Ràng buộc: Không có ràng buộc nào cho chức năng daily fact.&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="vf-lQCcpxvajzbO1AWoG-5">
+          <mxGeometry y="26" width="180" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.01;exitY=0.588;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.006;entryY=0.645;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vf-lQCcpxvajzbO1AWoG-4" target="vf-lQCcpxvajzbO1AWoG-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="410" as="sourcePoint" />
+            <mxPoint x="720" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-8" value="Tìm kiếm bộ flashcard" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="960" y="120" width="180" height="220" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-9" value="Người dùng tìm kiếm bộ flashcard họ muốn học/tìm hiểu&#xa;- Chức năng: &#xa;+ Nhập nội dung vào ô tìm kiếm&#xa;+ Tìm kiếm theo từ khóa&#xa;- Liên kết: Danh sách các bộ flashcard liên quan đến từ khóa tìm kiếm&#xa;- Đối tượng: Khung nhập, nút tìm kiếm, tab filter&#xa;- Ràng buộc: Khung nhập cần có nội dung để tìm kiếm&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="vf-lQCcpxvajzbO1AWoG-8">
+          <mxGeometry y="26" width="180" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.006;exitY=0.645;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.002;entryY=0.645;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vf-lQCcpxvajzbO1AWoG-6" target="vf-lQCcpxvajzbO1AWoG-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="351" as="sourcePoint" />
+            <mxPoint x="977" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-11" value="Học bộ flashcard" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="960" y="440" width="180" height="250" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-12" value="Người dùng ôn luyện các flashcard hàng ngày:&#xa;- Chức năng:&#xa;+ Chọn bộ flashcard để học&#xa;+ Học và chọn độ khó của flashcard để ứng dụng sắp xếp lịch ôn luyện tiếp theo cho flashcard.&#xa;- Liên kết: Trang chính&#xa;- Đối tượng: Danh sách các bộ flashcard và các nút bấm khi học flashcard.&#xa;- Ràng buộc: Chọn bộ flashcard mà có ít nhất 1 flashcard được xếp lịch học vào hôm nay&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="vf-lQCcpxvajzbO1AWoG-11">
+          <mxGeometry y="26" width="180" height="224" as="geometry" />
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.504;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vf-lQCcpxvajzbO1AWoG-9" target="vf-lQCcpxvajzbO1AWoG-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="901" y="370" as="sourcePoint" />
+            <mxPoint x="960" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-14" value="Tìm kiếm flashcard" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="440" width="180" height="260" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-15" value="Người dùng tìm kiếm bộ flashcard họ muốn học/tìm hiểu&#xa;- Chức năng: &#xa;+ Nhập nội dung vào ô tìm kiếm&#xa;+ Tìm kiếm theo từ khóa&#xa;- Liên kết: Danh sách các bộ flashcard liên quan đến từ khóa tìm kiếm&#xa;- Đối tượng: Khung nhập, nút tìm kiếm, tab filter&#xa;- Ràng buộc: &#xa;+ Khung nhập cần có nội dung để tìm kiếm&#xa;+ Cần chọn tab filter “Tìm kiếm flashcard”&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="vf-lQCcpxvajzbO1AWoG-14">
+          <mxGeometry y="26" width="180" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.002;exitY=0.411;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.006;entryY=0.393;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vf-lQCcpxvajzbO1AWoG-12" target="vf-lQCcpxvajzbO1AWoG-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="941" y="370" as="sourcePoint" />
+            <mxPoint x="940" y="468" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-17" value="Chơi game trắc nghiệm" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="440" width="180" height="220" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-18" value="Người dùng chơi game trắc nghiệm về một bộ flashcard và có điểm xếp hạng&#xa;- Chức năng: Trả lời những câu hỏi trắc nghiệm có xếp hạng&#xa;- Liên kết: Trang trắc nghiệm, Trang xếp hạng.&#xa;- Đối tượng: Di tích hoặc lịch sử được chọn.&#xa;- Ràng buộc: Người dùng đã đọc những thông tin của bộ thẻ cung cấp trước đó.&#xa;&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="vf-lQCcpxvajzbO1AWoG-17">
+          <mxGeometry y="26" width="180" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.013;exitY=0.393;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vf-lQCcpxvajzbO1AWoG-15" target="vf-lQCcpxvajzbO1AWoG-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="719" y="590" as="sourcePoint" />
+            <mxPoint x="660" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-20" value="Xem tài khoản cá nhân" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontFamily=Times New Roman;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="440" width="180" height="260" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vf-lQCcpxvajzbO1AWoG-21" value="Người dùng xem thông tin, lịch sử hoạt động của mình như level, achievements, streak&#xa;- Chức năng: Người dùng nhấp vào biểu tượng “ba dấu gạch ngang xếp chồng lên nhau” để xem thông tin.&#xa;- Liên kết: Màn hình chính và vào mục “xem tài khoản cá nhân”&#xa;- Đối tượng: Tất cả người dùng đã có tài khoản&#xa;- Ràng buộc: Người dùng cần phải đăng nhập thành công vào ứng dụng thì mới có thể xem được thông tin tài khoản của mình&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Times New Roman;whiteSpace=wrap;" vertex="1" parent="vf-lQCcpxvajzbO1AWoG-20">
+          <mxGeometry y="26" width="180" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="QSVPd2yGRQgfJPvUczhS-0" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.994;entryY=0.396;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vf-lQCcpxvajzbO1AWoG-18" target="vf-lQCcpxvajzbO1AWoG-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="468" y="569.66" as="sourcePoint" />
+            <mxPoint x="400" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
