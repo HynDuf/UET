@@ -1,0 +1,77 @@
+<!-- index.html (HTML Frontend) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement Algorithms</title>
+    <style>
+        * {
+            margin: 10px;
+        }
+        #page-sequence {
+            margin: 10px;
+            width: 900px; 
+            height: 40px; 
+            font-size: 16px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Page Replacement Algorithm</h1>
+        <label for="algo-select">Select Algorithm:</label>
+        <select id="algo-select">
+            <option value="0">FIFO</option>
+            <option value="1">LRU</option>
+            <option value="2">MRU</option>
+            <option value="3">LFU</option>
+            <option value="4">MFU</option>
+            <option value="5">Optimal</option>
+            <option value="6">Second Chance</option>
+        </select>
+        <br>
+        <label for="num-frames">Number of Frames:</label>
+        <input type="number" id="num-frames" min="1" max="20">
+        <br>
+        <label for="page-sequence">Page Sequence:</label>
+        <input type="text" id="page-sequence">
+        <br>
+        <button id="calculate-btn">Calculate</button>
+        <br>
+        <div id="result"></div>
+        <div id="conflicts"></div>
+        <div id="df"></div>
+        <div id="table-image"></div> 
+    </div>
+
+    <script>
+        document.getElementById('calculate-btn').addEventListener('click', function() {
+            var selectedAlgo = document.getElementById('algo-select').value;
+            var numFrames = document.getElementById('num-frames').value;
+            var pageSequence = document.getElementById('page-sequence').value;
+
+            // Make AJAX request to Flask backend
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/calculate', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var result = JSON.parse(xhr.responseText);
+                    document.getElementById('result').innerText = 'Page Faults: ' + result.page_faults;
+
+                    // Clear the existing table image
+                    document.getElementById('table-image').innerHTML = '';
+
+                    // Display new table image with a timestamp query parameter
+                    var tableImage = document.createElement('img');
+                    tableImage.src = result.table_image + '?' + new Date().getTime(); // Append timestamp
+                    document.getElementById('table-image').appendChild(tableImage);
+                }
+            };
+            xhr.send('selected_algo=' + selectedAlgo + '&num_frames=' + numFrames + '&page_sequence=' + pageSequence);
+        });
+    </script>
+</body>
+</html>
