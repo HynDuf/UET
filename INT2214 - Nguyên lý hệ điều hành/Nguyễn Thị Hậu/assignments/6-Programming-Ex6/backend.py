@@ -81,6 +81,7 @@ def calculate():
     # Prepare data to send back to frontend
     result = {
         'page_faults': page_faults,
+        'page_faults_array': [p for p in conflicts if p != -1],
         'conflicts': conflicts,
         'df': df.to_json(orient='split'),
         'table_image': table_image_path  # Add the table image URL
