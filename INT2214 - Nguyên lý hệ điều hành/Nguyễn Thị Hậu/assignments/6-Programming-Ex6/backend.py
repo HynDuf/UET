@@ -55,7 +55,7 @@ def calculate():
     selected_algo = int(request.form['selected_algo'])
     num_frames = int(request.form['num_frames'])
     split_char = None if ',' not in request.form['page_sequence'] else ','
-    page_sequence = list(map(int, request.form['page_sequence'].split(split_char)))
+    page_sequence = request.form['page_sequence'].split(split_char)
 
     # Perform calculation based on selected algorithm
     if selected_algo == 0:
@@ -81,6 +81,7 @@ def calculate():
     # Prepare data to send back to frontend
     result = {
         'page_faults': page_faults,
+        'page_faults_array': [p for p in conflicts if p != -1],
         'conflicts': conflicts,
         'df': df.to_json(orient='split'),
         'table_image': table_image_path  # Add the table image URL

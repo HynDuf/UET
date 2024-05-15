@@ -59,7 +59,7 @@
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     var result = JSON.parse(xhr.responseText);
-                    document.getElementById('result').innerText = 'Page Faults: ' + result.page_faults;
+                    document.getElementById('result').innerText = 'Page Faults: ' + result.page_faults + '\n' + result.page_faults_array;
 
                     // Clear the existing table image
                     document.getElementById('table-image').innerHTML = '';
