@@ -3,6 +3,7 @@
 from flask import Flask, render_template, request, jsonify
 import page_replacement_algo
 import matplotlib.pyplot as plt
+import re
 
 app = Flask(__name__)
 solver = page_replacement_algo.Solver()
@@ -54,8 +55,7 @@ def index():
 def calculate():
     selected_algo = int(request.form['selected_algo'])
     num_frames = int(request.form['num_frames'])
-    split_char = None if ',' not in request.form['page_sequence'] else ','
-    page_sequence = request.form['page_sequence'].split(split_char)
+    page_sequence = re.split(r'[,\s]+', request.form['page_sequence'])
 
     # Perform calculation based on selected algorithm
     if selected_algo == 0:
