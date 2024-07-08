@@ -1,0 +1,1 @@
+Tool của Hoàng chỗ nào ko có nút start thì ấn enter ở ô X =)))
