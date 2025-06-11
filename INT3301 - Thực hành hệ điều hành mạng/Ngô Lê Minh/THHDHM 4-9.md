@@ -1,0 +1,30 @@
+- Chuột phải vào màn hình -> Properties -> Settings -> Chỉnh lên 800x600
+- Bài 4: Quản lý đĩa
+    - Start -> Administrative Tools -> Computer Management -> Disk management -> Chuột phải vào ổ đĩa và vào thư mục -> Properties
+    - Nén thư mục
+        - Thư mục nen, nen.txt, nen du lieu, chuột phải, tick vào compressed
+    - Chuột phải C -> Properties -> Disk Quota cho user
+- Bài 5: Tạo và quản lý thư mục dùng chung
+    - Share thư mục: thư mục dungchung, dungchung.txt, chuột phải share, tick vào share, thêm ha, chọn full control, security -> thêm ha -> chọn full control. Vào client bằng ha, start -> all programs -> accesories -> window explorer -> my network places -> entire network -> microsoft -> netclass -> thuchanh1 -> dung chung.
+    - Start -> Administrative tools -> Computer Management. Thư mục mới, chuột phải share & security -> Security -> add ha -> modify -> xem advanced -> chọn ha để xem advanced
+- Bài 6: DHCP
+    - Start -> Control Panel -> Add/Remove programs -> Network services -> Detail -> DHCP -> OK -> Next -> Finish
+    - Administrative Tools -> DHCP -> chuột phải vào thuchanh1 -> Authorize
+    - chuột phải vào thuchanh1 -> New Scope -> Length: 24 -> Parent domain: netclass.edu.vn -> Server name: thuchanh1.netclass.edu.vn -> Resolve -> Add -> Next ...
+    - Log máy client Admin THUCHANH2 -> TCP/IP -> Obtain automatically -> ipconfig /renew -> ipconfig /all
+- Bài 7: DNS
+    - Server: Start -> Administrative Tools -> DNS -> Chuột phải reverse lookup -> New Zone -> Primary Zone -> 10.10.10 -> Next ...
+    - Chuột phải 10.10.10.x -> New Pointer -> 2 -> Browse -> thuchanh1
+    - Đăng nhập máy client = Admin NETCLASS -> nslookup 
+    - chuột phải vào netclass.edu.vn -> New Alias -> www -> OK -> Nếu chưa được thì restart cả 2 máy
+- Bài 8: FTP
+    - Start -> Control Panel -> Add/Remove programs -> Window Component -> Application Server -> IIS -> FTP
+    - Start -> Administrative Tools -> Internet Information Services (IIS) -> Chuột phải Default FTP Site -> Properties -> Home Directory -> Tick Write 
+    - Chuột phải inetpub/ftproot -> Security -> Cho quyền Modify ha
+    - DNS -> chuột phải vào netclass.edu.vn -> New Alias -> ftp
+    - Chuyển sang client -> Admin Netclass -> ftp ftp.netclasss.edu.vn -> ha -> lcd C:\ -> Tạo testftp.txt trong C:\ -> put testftp.txt 
+- Bài 9: Web
+    - Start -> Administrative Tools -> Internet Information Services (IIS) -> Websites -> Default WEb site
+    - Máy client -> http://www.netclass.edu.vn/iisstart.htm
+    - Chuột phải Websites -> New -> Description -> 8080 -> Tạo 1 thư mục để chọn -> Next ...
+    - Tạo file Default.htm trong thư mục (tạo txt trước điền nội dung r lưu lại đuôi sau) -> http://www.netclass.edu.vn:8080/.
